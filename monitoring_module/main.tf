@@ -1,3 +1,9 @@
+resource "azurerm_resource_group" "monitoring" {
+    name = "monitoring-1"
+    location = "East US"
+  
+}
+
 resource "azurerm_log_analytics_workspace" "example" {
     name = var.workspace_name
     location = var.location
